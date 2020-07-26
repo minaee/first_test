@@ -15,7 +15,6 @@ class MplCanvas(FigureCanvas):
         super(MplCanvas, self).__init__(fig)
 
 
-
 class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self, *args, **kwargs):
@@ -94,7 +93,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.xdata = [0, 1, 2, 3, 4] #list(range(n_data))
         self.ydata = [0, 2, 0.5, 8, 23] #[random.randint(0, 10) for i in range(n_data)]
         self.update_plot()
-
 
     def update_plot(self):
         # Drop off the first y element, append a new one.
